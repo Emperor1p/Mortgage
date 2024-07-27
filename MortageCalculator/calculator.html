@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="/fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/boxicons/css/boxicons.min.css">
+
+</head>
+
+<body style="background-color: rgb(227,244,252);">
+
+    
+        <div class=" container full-height">
+            <div class="row">
+                <div class=' ps-4 col-6'>
+                    <div class="card-body">
+                        <h4 class="pb-3 pt-4">Loan Calculator</h4>
+                        <form id="loan-form">
+                            <div class="form-group mb-3">
+                                <label>Mortgage Amount</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"  style="background-color: rgb(227,244,252);">$</span>
+                                    <input type="number" class="form-control" id="amount" placeholder=""
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Mortgage Term</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" id="mortgage-year"
+                                                placeholder="" required >
+                                            <span class="input-group-text"  style="background-color: rgb(227,244,252);">Year</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Interest Rate</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" id="interest-rate"
+                                                placeholder="" required>
+                                            <span class="input-group-text"  style="background-color: rgb(227,244,252);">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>Mortgage Type</p>
+                                <div class="border border-2 yearly ps-3 mb-4  " >
+                                    <input type="radio" name="mortgage-type" value="repayment" class="large-radio"> Repayment <br>
+                                </div>
+                                <div class="border border-2 yearly ps-3 mb-4">
+                                    <input type="radio" name="mortgage-type" value="interest-only" class="large-radio"> Interest Only
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 year">
+                                <i class="fas fa-calculator ps-3" id="submit">
+                                <input type="submit" value="Calculate" class="btn " > </i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ps-4 col-12 col-lg-6 resultCenter" style="background-color: rgb(19,48,64);"
+                    style="color: white; ">
+                    <div>
+                        <h4 class="pt-4">Your result</h4>
+                        <p id="result-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                            sunt
+                            eligendi debitis libero illo nulla ratione pariatur accusantium porro cupiditate fugit modi
+                            consequuntur, recusandae ?</p>
+                    </div>
+
+                    <div class="final ps-4 pt-2" ; id="result">
+                        <p class="" id="result-text"></p>
+                        <p id="displayResult"></p>
+                        <h3 style="color: yellow;" id="displayResulter"></h3>
+                        <hr>
+                        
+                        <p class="pb-2" id="totalPay"></p>
+                        <h5 class="pb-3" id="totalPayer"></h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Calculator.js"></script>
+</body>
+
+</html>
